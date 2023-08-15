@@ -1,0 +1,43 @@
+﻿@model Order
+
+<h1>Оформление заказа</h1>
+<div class="row mb-5">
+    <form asp-action="CheckOut" method="post" class="form-horizontal">
+        <div class="form-group">
+            <label asp-for="name"></label>
+            <div class="col-md-12">
+                <input asp-for="name" class="form-control" />
+                <span asp-validation-for="name" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="surname"></label>
+            <div class="col-md-12">
+                <input asp-for="surname" class="form-control" />
+                <span asp-validation-for="surname" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="adress"></label>
+            <div class="col-md-12">
+                <input asp-for="adress" class="form-control" />
+                <span asp-validation-for="adress" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="phone"></label>
+            <div class="col-md-12">
+                <input asp-for="phone" class="form-control" />
+                <span asp-validation-for="phone" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="email"></label>
+            <div class="col-md-12">
+                <input asp-for="email" class="form-control" />
+                <span asp-validation-for="email" class="text-danger"></span>
+            </div>
+        </div>
+        <input class="btn btn-success" type="submit" value="Завершить заказ" />
+    </form>
+</div>
